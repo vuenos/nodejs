@@ -53,3 +53,18 @@ function bar(x) {
 const baz = bar(7); // 21 + 21
 console.log(baz); // 42
 ```
+
+### 비동기 처리
+```javascript
+function delayRun() {
+  console.log("3초 후 실행");
+}
+console.log("시작");
+
+setTimeout(delayRun, 3000);
+console.log("끝");
+// 결과 console
+// 시작
+// 끝
+// 3초 후 실행
+```
